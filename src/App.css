@@ -1,38 +1,92 @@
-.App {
-  text-align: center;
+*{
+    background:#DDD;
+}
+*:focus {
+    outline: 0 !important;
+}
+#container h1{
+    text-align: center;
+}
+#container div{
+    display: flex;
+    justify-content: center;
+}
+#container .info{
+    display: flex;
+    width: 100%;
+    max-width: 500px;
+    margin: 25px auto;
+    flex-direction: column;
+}
+#container .info strong{
+    display: flex;
+    justify-content: start;
+    text-align: start;
+    font-size: 25px;
+    margin-top: 10px;
+}
+#container .conteiner-add input{
+    margin-bottom: 15px;
+    height: 40px;
+    border-radius: 5px;
+    padding: 0 20px;
+    font-size: 15px;
+    background-color: #FFF;
+    outline: none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#container .conteiner-add button{
+    margin-bottom: 15px;
+    margin-left: 10px;
+    height: 40px;
+    border-radius: 5px;
+    padding: 0 20px;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: #FFF;
+    border: 0;
+    cursor: pointer;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#list{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 530px;
+    margin: 30px auto;
+    padding: 40px;
+    justify-content: start;
+    text-align: start;
+    border: 1px solid #000;
+    background: #FFF;
+}
+#list ul{
+    background: #FFF;
+    padding: 0;
+}
+#list ul div{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    padding-bottom: 20px;
+    background: #FFF;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#list ul div li{
+    display: flex;
+    padding-left: 25px;
+    padding-bottom: 20px;
+    flex-direction: column;
+    font-size: 25px;
+    background: #FFF;
+    border-bottom: 5px inset;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#list ul div li span{
+    background: #61AFEF ;
+    color: #FFF;
+    font-weight: bold;
+    max-width: 120px;
+    margin: 20px 0;
+    border-radius: 30px;
+    padding: 10px;
 }
