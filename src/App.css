@@ -25,6 +25,23 @@
     font-size: 25px;
     margin-top: 10px;
 }
+#container .info button{
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 20px;
+    height: 40px;
+    width: 155px;
+    border-radius: 5px;
+    padding: 0 20px;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: #FF0000;
+    color: #FFF;
+    font-weight: bold;
+    border: 0;
+    cursor: pointer;
+}
+
 #container .conteiner-add input{
     margin-bottom: 15px;
     height: 40px;

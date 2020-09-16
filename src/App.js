@@ -51,6 +51,13 @@ function App() {
           setTarefas(newConcluido);
      }
 
+     function dell(){
+          localStorage.clear();
+          document.location.reload(true);
+
+
+     }
+
   return (
     <div id="container">
          <h1>Lista de Tarefas</h1>
@@ -59,9 +66,10 @@ function App() {
                <button type="button" onClick={handleAdd}>Adicionar</button>
          </div>
          <div className="info">
-              <strong>Tarefas: {totalTarefas}!</strong>
-               <strong>Concluidos: {totalConcluido}!</strong>
-               <strong>Total não Concluida {total}</strong>
+              {totalTarefas > 0 &&<strong>Tarefas: {totalTarefas}!</strong>}
+               {totalConcluido > 0 &&<strong>Concluidos: {totalConcluido}!</strong>}
+               {total > 0 &&<strong>Total não Concluida {total}</strong>}
+               {totalConcluido == totalTarefas && totalTarefas > 0 &&<button type="button" onClick={dell}>Excluir todas as tarefas</button>}
          </div>
          <div id="list">
                <ul>
